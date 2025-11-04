@@ -1,4 +1,4 @@
-# Deep mutational scanning of germline and somatic CR9114
+# Deep mutational scanning of germline and somatic CR9114 against different influenza hemagglutinin (HA) proteins
 
 ## Introduction
 This study performs four deep mutational scanning (DMS) experiments to compare the binding affinity landscapes of the germline and somatic CR9114 against H1 stem, H3 HA, and influenza B HA. Raw read files in fastq format from NIH SRA database [BioProject: 1284397](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1284397)
@@ -10,9 +10,9 @@ This study performs four deep mutational scanning (DMS) experiments to compare t
 3. Convert the count data at the nucleotide level to amino acid level using [./script/CR9114HC_GL_count_nuc2aa.py](./script/CR9114HC_GL_count_nuc2aa.py) for the germline CR9114 DMS experiments and [./script/CR9114HC_WT_count_nuc2aa.py](./script/CR9114HC_WT_count_nuc2aa.py) for the somatic CR9114 DMS experiments.
 4. Compute the KD:
   * For germline CR9114 vs H1: see [./result/GL_H1/](./result/GL_H1/)
-  * For somatic CR8114 vs H1: see [./result/WT_H1/](./result/WT_H1/)
-  * For somatic CR8114 vs H3: see [./result/WT_H3/](./result/WT_H3/)
-  * For somatic CR8114 vs BHA: see [./result/WT_fluB/](./result/WT_fluB/)
+  * For somatic CR9114 vs H1: see [./result/WT_H1/](./result/WT_H1/)
+  * For somatic CR9114 vs H3: see [./result/WT_H3/](./result/WT_H3/)
+  * For somatic CR9114 vs BHA: see [./result/WT_fluB/](./result/WT_fluB/)
 5. Compile the KD results for downstream analysis and visualization using [./script/compile_TiteSeq.py](./script/compile_TiteSeq.py)
 
 ## Plotting
