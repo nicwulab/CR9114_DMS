@@ -7,7 +7,6 @@ library(tidyr)
 library(reshape)
 library(stringr)
 library(dplyr)
-library(ggtext)
 library(gridExtra)
 library(stringr)
 library(qualpalr)
@@ -48,7 +47,7 @@ plot_SHM_KD <- function(df, ab_list, start, end){
   return (p)
   }
 
-plot_SHM_freq_vs_KD <- function(df, output_graph){
+plot_SHM_freq_vs_KD <- function(df){
   textsize <- 8
   p <- ggplot() +
          geom_point(data=df, aes(x=freq, y=`minus_delta_log_KD (GL)`, color=in_CR9114), alpha=0.7, pch=16, size=1) +
@@ -105,4 +104,4 @@ df_SHM <- select(df, SHM, in_CR9114, `minus_delta_log_KD (GL)`) %>%
             group_by(SHM, in_CR9114, `minus_delta_log_KD (GL)`) %>%
             summarize(count = n()) %>%
             mutate(freq=count/ab_count)
-plot_SHM_freq_vs_KD(df_SHM, "graph/IGHV169_SHM_vs_DMS.png")
+plot_SHM_freq_vs_KD(df_SHM)

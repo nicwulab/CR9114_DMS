@@ -146,14 +146,14 @@ plot_cor_log2 <- function(dt,bin,concentration){
 Now let's read data and make some plots
 ```{r}
 # read data as dataframe
-dt <- read.csv(file="./CR9114HC_WT_count_aa_fluB.tsv", sep = '\t')
+dt <- read.csv(file="../CR9114HC_WT_count_aa_fluB.tsv", sep = '\t')
 dt[is.na(dt)] <- 0
 
 # 删除带有'pre'的列
 dt <- dt[, !grepl("pre|73|74", names(dt))]
 
 # 处理info_df
-info_df <- read_excel("./20241007_Sample_IDs_for_Yiquan_DMS1CR9114WT.xlsx", sheet = 'fluB')
+info_df <- read_excel("../../doc/somatic_CR9114_FACS_info.xlsx", sheet = 'fluB')
 info_df <- info_df %>%
   filter(!grepl("pre", `Sequencing Label`))
 

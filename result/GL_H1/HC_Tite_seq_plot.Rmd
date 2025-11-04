@@ -146,10 +146,10 @@ plot_cor_log2 <- function(dt,bin,concentration){
 Now let's read data and make some plots
 ```{r}
 # read data as dataframe
-dt <- read.csv(file="../result/CR9114HC_count_aa.tsv", sep = '\t')
+dt <- read.csv(file="../CR9114HC_GL_count_aa.tsv", sep = '\t')
 
 dt[is.na(dt)] <-0
-info_df <- read_excel("../20230228_CR9114_mutlib_FACS_spl_list.xlsx")
+info_df <- read_excel("../../doc/germline_CR9114_FACS_info.xlsx")
 
 # add info into count table - dt
 names(dt)[3:83] <- info_df$`FACS Label`
