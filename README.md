@@ -4,7 +4,7 @@
 This study performs four deep mutational scanning (DMS) experiments to compare the binding affinity landscapes of the germline and somatic CR9114 against H1 stem, H3 HA, and influenza B HA. Raw read files in fastq format from NIH SRA database [BioProject: 1284397](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1284397)
 
 ## Tite-Seq analysis
-[Tite-Seq](https://pubmed.ncbi.nlm.nih.gov/28035901/) was used to quantify the binding affinity of individual mutants. Here is the data analysis workflow:
+[Tite-Seq](https://pubmed.ncbi.nlm.nih.gov/28035901/) is used to quantify the binding affinity of individual mutants. Here is the data analysis workflow:
 1. Merging forward and reverse reads by [PEAR](https://cme.h-its.org/exelixis/web/software/pear/doc.html) using [./script/merge_reads.py](./script/merge_reads.py).
 2. Count variants at the nucleotide level using [./script/CR9114HC_GL_fastq2count.py](./script/CR9114HC_GL_fastq2count.py) for the germline CR9114 DMS experiments and [./script/CR9114HC_WT_fastq2count.py](./script/CR9114HC_WT_fastq2count.py) for the somatic CR9114 DMS experiments.
 3. Convert the count data at the nucleotide level to amino acid level using [./script/CR9114HC_GL_count_nuc2aa.py](./script/CR9114HC_GL_count_nuc2aa.py) for the germline CR9114 DMS experiments and [./script/CR9114HC_WT_count_nuc2aa.py](./script/CR9114HC_WT_count_nuc2aa.py) for the somatic CR9114 DMS experiments.
