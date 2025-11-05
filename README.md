@@ -1,7 +1,7 @@
 # Deep mutational scanning of germline and somatic CR9114 against different influenza hemagglutinin (HA) proteins
 
 ## Introduction
-This study performs four deep mutational scanning (DMS) experiments to compare the binding affinity landscapes of the germline and somatic CR9114 against H1 stem, H3 HA, and influenza B HA. Raw read files in fastq format from NIH SRA database [BioProject: 1284397](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1284397)
+This study performs four deep mutational scanning (DMS) experiments to compare the binding affinity landscapes of the germline and somatic CR9114 against H1 stem, H3 HA, and influenza B HA. Raw read files in fastq format from NIH SRA database: [BioProject PRJNA1284397](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1284397)
 
 ## Tite-Seq analysis
 [Tite-Seq](https://pubmed.ncbi.nlm.nih.gov/28035901/) is used to quantify the binding affinity of individual mutants. Here is the data analysis workflow:
