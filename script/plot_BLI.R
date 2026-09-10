@@ -112,7 +112,7 @@ plot_BLI_heatmap <- function(df, graphname){
                                        barwidth = 0.7, barheight = 5, title=bquote(bold(-"Δ"*log["10"]*' '*K[D]*" (nM)")))) +
           xlab("") +
           ylab("Mutation")
-  ggsave(graphname, p, height=2.5, width=2.5, dpi=300)
+  ggsave(graphname, p, height=2.5, width=2.4, dpi=300)
   }
 
 df <- read_tsv('result/KD_compare_BLI_DMS.tsv') %>%
