@@ -23,4 +23,5 @@ Figures in [./graph/](./graph/) are generated as follows:
 4. Scatterplots comparing the binding affinity results with expression level: [./script/plot_QC.R](./script/plot_QC.R)
 5. Scatterplots comparing the results from replicates: [./script/plot_bind_vs_exp.R](./script/plot_bind_vs_exp.R)
 6. Heatmap showing the frequency of each mutation in the pre-selection input: [./script/plot_heatmap_freq.R](./script/plot_heatmap_freq.R)
-7. Plot the effects of somatic hypermutations in known IGHV1-69 HA stem antibodies on CR9114 germline: [./script/plot_SHM_KD.R](./script/plot_SHM_KD.R)
+7. Comparing the results between DMS and BLI binding assay: [./script/plot_BLI.R](./script/plot_BLI.R)
+8. Plot the effects of somatic hypermutations in known IGHV1-69 HA stem antibodies on CR9114 germline: [./script/plot_SHM_KD.R](./script/plot_SHM_KD.R)
